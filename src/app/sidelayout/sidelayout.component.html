@@ -1,0 +1,17 @@
+<div class="logo">
+    <button class="logo-btn" style="border-radius: 0px;margin-top: 6px;">Logo</button>
+</div>
+
+<div class="sidebar-wrapper">
+    <ul class="nav" style="padding-top: 10px;">
+        <li  routerLinkActive="active" *ngFor="let menuitem of menuItems">
+            <!--If is a single link-->
+            <a  class="nav-link nav-new-link"[routerLink]="[menuitem.path]" *ngIf="menuitem.type === 'link'">
+                <i class="{{menuitem.icon}}" style="color: #3179c5 ;"></i>
+                <p>{{menuitem.title}}</p>
+            </a>
+        </li>
+    </ul>
+    
+    <button class="btn btn-simple btn-align" style="color:#3179c5 ;"><i class="nc-icon nc-button-power fa-rotate-90" style="font-size: 18px;"></i> Logout </button> 
+</div>

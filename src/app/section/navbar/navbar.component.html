@@ -1,0 +1,28 @@
+<nav #navbar class="navbar navbar-expand-lg navbar-absolute" [ngClass]="{ 'bg-white': open === true , 'navbar-transparent': open === false}">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">
+      <div class="navbar-minimize">
+        <form>
+          <div class="input-group no-border">
+            <input type="text" value="" class="form-control" placeholder="Search...">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <i class="nc-icon nc-zoom-split"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+      <ul class="navbar-nav" style="padding-right: 10px;">
+        <select style="border: none;">
+          <option>Organization TCS</option>
+          <option>Organization Infosys</option>
+          <option>Organization Wipro</option>
+        </select> 
+      </ul>
+      <i class="nc-icon nc-circle-10" style="color: grey;font-size: 40px;"></i>
+    </div>
+  </div>
+</nav>
