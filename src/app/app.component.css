@@ -1,0 +1,26 @@
+.country-section {
+    border-bottom: 0.5px solid black;
+}
+.row {
+    margin-right: 0;
+    margin-top: 0;
+}
+.col-md-6 {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.tp-container {
+    position: inherit;
+}
+.tp-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100px;
+}
+
+.mat-drawer-container {
+    background-color: white;
+    color: black;
+}

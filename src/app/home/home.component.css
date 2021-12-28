@@ -1,0 +1,54 @@
+.country-section {
+  border-bottom: 0.5px solid black;
+}
+
+.row {
+  margin-right: 0;
+  margin-top: 0;
+}
+
+select {
+  right: 0;
+}
+
+.box-align {
+  justify-content: center;
+}
+
+.confirm {
+  background-color: blue;
+}
+
+.table-data {
+  text-align: -webkit-center;
+  margin-top: 40px;
+}
+
+.table {
+  width: 20%;
+  text-align-last: center;
+}
+
+.active {
+  background-color: yellow;
+}
+
+.recovered {
+  background-color: green;
+}
+
+.death {
+  background-color: red;
+}
+
+.box {
+  border-radius: 4px;
+  padding-bottom: 40%;
+  border: 1px solid black;
+}
+
+.col-lg-2,
+.col-md-3,
+.col-xs-6 {
+  margin-top: 30px !important;
+}

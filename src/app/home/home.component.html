@@ -1,0 +1,50 @@
+<content>
+  <div class="row box-align">
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="box confirm text-center">Confirmed
+        <div> {{countryContent?.confirmed}} </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="box active text-center">Active
+        <div>{{countryContent?.confirmed - countryContent?.recovered + countryContent?.deaths}}</div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="box recovered text-center">Recovered
+        <div>{{countryContent?.recovered}}</div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="box death text-center">Death
+        <div>{{countryContent?.deaths}}</div>
+      </div>
+    </div>
+    <div class="table-data">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th scope="col">Population</th>
+            <th scope="col">{{countryContent?.population}}</th>
+          </tr>
+          <tr>
+            <th scope="row">Cases per million</th>
+            <td>{{(countryContent?.confirmed/countryContent?.population)* 1000000}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Active Ratio</th>
+            <td>{{((countryContent?.confirmed - countryContent?.recovered + countryContent?.deaths)/countryContent?.confirmed)*100}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Recovery Ratio</th>
+            <td>{{(countryContent?.recovered/countryContent?.confirmed)*100}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Death Ratio</th>
+            <td>{{(countryContent?.deaths/countryContent?.confirmed)*100}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</content>
